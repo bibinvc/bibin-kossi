@@ -1,78 +1,80 @@
-body {
-  font-family: 'Lato', sans-serif;
+#main {
+  /* variables */
+  --content-background: hsl(51, 40%, 96%);
+  --contrast-background: hsl(51, 40%, 87%);
+  
+  margin: 10px;
+  background-color: var(--content-background, gray);
+  display: flex;
+  flex-direction: column;
 }
 
-h1, h2, h3, h4, h5, h6, blockquote {
- font-family: 'Roboto slab', serif;
+header {
+  background-color: var(--contrast-background, gray);
+  border-radius: 10px;
 }
 
 h1 {
- font-size: 3em;
+  margin-top: 10px;
 }
 
-h2 {
- font-size: 2.5em;
+#title {
+  text-align: center;
+  padding: 10px;
 }
 
-h3 {
- font-size: 2.2em;
+main {
+  background-color: var(--content-background, gray);
 }
 
-p, li {
- font-size: 1.2em;
+#main-content {
+  max-width: 600px;
+  margin: auto;
 }
 
-.hero-section {
- margin: 0;
- height: 650px;
- color: #fff000;
- background-color: #e4e4e4;
- background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Gandhi_spinning.jpg/1280px-Gandhi_spinning.jpg");
- background-size: cover;
- background-position: fixed;
- background-attachment: fixed;
- background-repeat: no-repeat;
+footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  background-color: var(--contrast-background, gray);
+  border-radius: 10px;
 }
 
-.hero-content {
- margin-top: 250px;
- margin-left: 200px;
-}
-.hero-button {
- margin-top: 20px;
-}
-.hero-section a {
- color: #ffff00;
-}
-.main {
- margin-top: 60px;
- padding: 30px 20px;
- background-color: #e4e4e4;
- border-radius: 5px;
+#footer-content {
+  margin: auto;
+  max-width: 800px;
+  text-align: center;
 }
 
-/* .container-img {
- background-color: #ffffff;
- border-radius: 5px;
+.text-content {
+  text-align: justify;
 }
-*/
-@media screen and (max-width : 769px) {
- .hero-section {
- margin: 0;
- height: 400px;
- color: #fff000;
- background-color: #e4e4e4;
- background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Gandhi_spinning.jpg/1280px-Gandhi_spinning.jpg");
- background-size: cover;
- background-position: center;
- background-attachment: fixed;
- background-repeat: no-repeat;
-}  
- .hero-content {
- margin-top: 0;
- margin-left: 0;
+
+li {
+  margin-top: 10px;
 }
- .small-screen-invisible {
-   display: none;
- }
+
+#image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
 }
+
+time {
+  font-weight: bold;
+}
+
+#image-label {
+  text-align: center;
+  font-size: 15px;
+}
+
+#tribute-link:hover {
+  color: hsl(220, 88%, 60%);
+}
+
+#tribute-link {
+  color: hsl(220, 57%, 42%);
+}
+@JillSanders

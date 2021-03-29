@@ -1,3 +1,1 @@
-$(document).ready(function() {
-  $('#hero-button').addClass('animated shake inf');
-});
+document.getElementsByTagName("h1")[0].style.fontSize = "4vw";
